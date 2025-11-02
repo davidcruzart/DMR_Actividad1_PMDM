@@ -1,15 +1,59 @@
+# --- IDE / IntelliJ / Android Studio ---
 *.iml
-.gradle
-/local.properties
-/.idea/caches
-/.idea/libraries
-/.idea/modules.xml
-/.idea/workspace.xml
-/.idea/navEditor.xml
-/.idea/assetWizardSettings.xml
-.DS_Store
-/build
-/captures
-.externalNativeBuild
-.cxx
+.idea/**/workspace.xml
+.idea/**/tasks.xml
+.idea/**/usage.statistics.xml
+.idea/**/dictionaries
+.idea/**/shelf
+.idea/**/libraries
+.idea/**/caches
+.idea/**/modules.xml
+.idea/**/gradle.xml
+.idea/**/assetWizardSettings.xml
+.idea/**/navEditor.xml
+# (Si usas code style del proyecto y quieres versionarlo, NO lo ignores)
+#.idea/codeStyles/
+
+# --- Gradle ---
+.gradle/
+build/
+**/build/
+!gradle/wrapper/gradle-wrapper.jar
+!gradle/wrapper/gradle-wrapper.properties
+gradle-app.setting
+
+# --- Config local ---
 local.properties
+
+# --- Android artefactos ---
+*.apk
+*.ap_
+*.aab
+*.aar
+*.dex
+*.class
+captures/
+.externalNativeBuild/
+.cxx/
+obj/
+
+# --- SO / miscelánea ---
+.DS_Store
+Thumbs.db
+*.log
+
+# --- Kotlin/Java out ---
+/out/
+*.kotlin_module
+
+# --- Opcionales (si los usas) ---
+# Firebase/Crashlytics (no subas credenciales)
+app/google-services.json
+*/google-services.json
+
+# fastlane
+fastlane/report.xml
+fastlane/Preview.html
+fastlane/screenshots
+fastlane/test_output
+fastlane/readme.md
